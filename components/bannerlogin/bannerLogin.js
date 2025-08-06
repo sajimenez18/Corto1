@@ -1,3 +1,6 @@
+import {bannerAccount} from '../bannerAccount/bannerAccount.js';
+//Recordar conectar bien todos los links
+
 export function banner2(){
     let div = document.createElement('div');
     div.className = "div-banner2";
@@ -20,8 +23,13 @@ export function banner2(){
     logBoton.className = "log-boton";
     div.appendChild(logBoton);
 
+    logBoton.addEventListener('click',()=>{
+        div.classList.add ("ocultar");
+        document.body.appendChild(bannerAccount());
+    });
+
     let option = document.createElement('p');
-    option.textContent = "OR";
+    option.textContent = "-- OR --";
     option.className = "option";
     div.appendChild(option);
 
