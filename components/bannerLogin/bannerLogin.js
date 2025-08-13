@@ -1,4 +1,5 @@
 import {bannerAccount} from '../bannerAccount/bannerAccount.js';
+import { bannerRegister } from '../bannerRegister/bannerRegister.js';
 //Recordar conectar bien todos los links
 
 export function banner2(){
@@ -37,6 +38,11 @@ export function banner2(){
     registerBoton.textContent = "REGISTER";
     registerBoton.className = "reg-boton";
     div.appendChild(registerBoton);
+
+    registerBoton.addEventListener('click',()=>{
+        div.classList.add ("ocultar");
+        document.body.appendChild(bannerRegister());
+    });
 
 
     return div

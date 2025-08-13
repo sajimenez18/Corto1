@@ -1,4 +1,4 @@
-import {banner2} from "../../components/bannerlogin/bannerLogin.js"
+import {banner2} from "../../components/bannerLogin/bannerLogin.js"
 
 export function login(){
     let login = document.createElement('div');

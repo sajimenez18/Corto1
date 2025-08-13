@@ -1,31 +1,48 @@
-export function bannerAccount (){
+export function bannerRegister (){
+
     let div = document.createElement('div');
-    div.className = "div-contenedor";
+    div.className = "divEspacio";
 
-    let arrowLeft = document.createElement('div');
-    arrowLeft.className = "arrowLeft";
-    div.appendChild(arrowLeft);
+    let arrowIzq = document.createElement('div');
+    arrowLeft.className = "arrowIzq";
+    div.appendChild(arrowIzq);
 
-    arrowLeft.addEventListener('click',()=>{
-        div.classList.add ("ocultar");
-        document.body.appendChild(bannerLogin());
-    });
 
     let bienvenida = document.createElement('h2');
-    bienvenida.textContent = "Welcome Back";
-    bienvenida.className = "again";
+    bienvenida.textContent = "Get's started with Geeta";
+    bienvenida.className = "start";
     div.appendChild(bienvenida);
 
     let texto = document.createElement('p');
-    texto.className = "texto";
-    texto.textContent = "Yay! You're back! Thanks for shopping with us. We have excited deals and promotions going on, grab your pick now!";
+    texto.className = "textolog";
+    texto.textContent = "Already have an account? Log in";
     div.appendChild(texto);
 
     let logtext = document.createElement('h2');
-    logtext.textContent = "LOG IN";
+    logtext.textContent = "REGISTER";
     logtext.className = "in";
     div.appendChild(logtext);
 
+    let name = document.createElement('h2');
+    name.textContent = "Your Name";
+    name.className = "name";
+    div.appendChild(name);
+
+    let divPrimero = document.createElement('div');
+    divPrimero.className = "divPrimero";
+    div.appendChild(divPrimero);
+
+    let silueta = document.createElement('div');
+    silueta.className = "silueta";
+    divPrimero.appendChild(silueta);
+
+
+    let fullName = document.createElement('span');
+    fullName.textContent = "Your Full Name";
+    fullName.className = "full-name";
+    divPrimero.appendChild(fullName);
+
+    //
     let addres = document.createElement('h2');
     addres.textContent = "Email address";
     addres.className = "adress";

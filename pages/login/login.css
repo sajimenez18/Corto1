@@ -1,0 +1,12 @@
+.repo-link, .gh-page-link {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.repo-link:hover, .gh-page-link:hover {
+    text-decoration: underline;
+}

@@ -1,7 +1,7 @@
-.div-contenedor {
+.divEspacio {
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/background/banner3.png');
+    background-image: url('../../assets/background/banner4.png');
     background-size: cover;
     background-position: top;
 
@@ -14,28 +14,32 @@
 
     gap: 20px;
 }
-.div-contenedor .texto{
+
+.div-deposito .arrowIzq {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    width: 5%;
+    height: 15px;
+    background-image: url('../../assets/icons/arrowLeft.png');
+}
+
+.div-contenedor .start {
+    color: white;
+}
+
+.div-deposito .textolog {
     font-size: 13px;
     width: 300px;
     font-weight: bolder;
     color: white;
     text-align: left;
 }
-.div-contenedor .again {
-    color: white;
-}
+
 .div-contenedor .in {
     color: white;
     margin-top: 80px;
 }
-.div-contenedor .arrowLeft {
-    margin-top: 225px;
-    margin-bottom: 50px;
-    width: 5%;
-    height: 15px;
-    background-image: url('../../assets/icons/arrowLeft.png');
-    
-}
+
 .divEnter {
     color: #AEAEAE;
     border: 1px solid #6342E8;
