@@ -2,14 +2,10 @@ export function bannerAccount (){
     let div = document.createElement('div');
     div.className = "div-contenedor";
 
-    let arrowLeft = document.createElement('div');
+    let arrowLeft = document.createElement('img');
     arrowLeft.className = "arrowLeft";
+    arrowLeft.src =  "../../assets/icons/arrowLeft.png";
     div.appendChild(arrowLeft);
-
-    arrowLeft.addEventListener('click',()=>{
-        div.classList.add ("ocultar");
-        document.body.appendChild(bannerLogin());
-    });
 
     let bienvenida = document.createElement('h2');
     bienvenida.textContent = "Welcome Back";
@@ -35,19 +31,16 @@ export function bannerAccount (){
     divEnter.className = "divEnter";
     div.appendChild(divEnter);
 
-    let sobre = document.createElement('div');
+    let sobre = document.createElement('img');
+    sobre.src = "../../assets/icons/correo.png";
     sobre.className = "sobre";
     divEnter.appendChild(sobre);
 
 
-    let correo = document.createElement('span');
-    correo.textContent = "hlo@geeta.co";
+    let correo = document.createElement('input');
+    correo.placeholder = "hlo@geeta.co";
     correo.className = "hlo";
     divEnter.appendChild(correo);
-
-    let error = document.createElement('div');
-    error.className = "error";
-    divEnter.appendChild(error); 
 
     let password = document.createElement('h2');
     password.className = "pass";
@@ -59,12 +52,13 @@ export function bannerAccount (){
     div.appendChild(divEntrar);
 
     let candado = document.createElement('div');
+    Image.src = "../../assets/icons/lock.png";
     candado.className = "candado";
     divEntrar.appendChild(candado);
 
-    let textcontra = document.createElement('p');
+    let textcontra = document.createElement('input');
     textcontra.className = "text-contra";
-    textcontra.textContent = "Enter you password";
+    textcontra.placeholder = "Enter you password";
     divEntrar.appendChild(textcontra);
 
     //
